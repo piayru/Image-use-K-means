@@ -1,5 +1,5 @@
 # Image-use-K-means
 
-Demo
-K=3
+#Demo</br>
+K=3</br>
 ![alt tag](http://i.giphy.com/3o7TKRnJVMH0PLNUQ0.gif)
