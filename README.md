@@ -8,12 +8,15 @@ K-means屬於一種分群演算法，可以簡單且快速的將分散的資料�
 ![center](http://latex.codecogs.com/gif.latex? \\Large arg_{s}min \\displaystyle\\sum_{i=1}^{k} \\displaystyle\\sum_{x\\in S_{i}} \\left\\|x- \\mu _{i}\\rught\\| ^2 ) </br>
 其實公式也不算是太複雜，白話的來說這些公式就是想取得每一群之中所有點到中心點的距離最小。</br>
 </br>
+</br>
 以步驟來說明的話就是:</br>
-1.首先先隨機取得K(分群數)個座標</br>
-2.計算每個目前資料分佈離哪個座標比較近，就先歸類到該座標的群組去</br>
-3.計算每群新的中心座標，並取代原先座標</br>
+1.首先先隨機取得K(分群數)個座標</br></br>
+2.計算每個目前資料分佈離哪個座標比較近，就先歸類到該座標的群組去</br></br>
+3.計算每群新的中心座標，並取代原先座標</br></br>
+</br>
 </br>
 接下來就是一直重複(2).(3)步驟直到每個群的成員不再變動、每個群中心位置都固定下來</br>
+</br>
 </br>
 如果還是不明白的話讓我們來看看下面這個gif圖</br>
 <img src="http://i.giphy.com/l44QkFPuIUHLk6raU.gif" width="971" height="604" border="0" /></a><br />
@@ -29,10 +32,16 @@ K-means屬於一種分群演算法，可以簡單且快速的將分散的資料�
 所以最終的結果每次都不一定會"完全一樣"</br>
 </br>
 </br>
-##Demo</br>
-K=3</br>
-<img src="http://i.imgur.com/ev9v8nJ.png" />
+</br>而將kmeans應用在圖片上就能有以下的效果
 </br>
+##Demo</br>
+</br>
+K=3</br>
+</br>
+<img src="http://i.imgur.com/ev9v8nJ.png" />
+</br>可以看到圖片大致上被分為K群(K種顏色)並重新繪製於影像上
+</br>
+</br>下面GIF可以呈現出每次分群的結果，可以從中看出分群的過程
 </br>
 <img src="http://i.giphy.com/3o7TKRnJVMH0PLNUQ0.gif">
 </br>
